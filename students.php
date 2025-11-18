@@ -22,12 +22,13 @@ if ($result && $result->num_rows > 0) {
 }
 ?>
 
-<table border="1">
+<table border="1px">
     <tr>
         <th>id</th>
-        <th>gender</th>
-        <th>country</th>
-        <th>distric</th>
+        <th>name</th>
+        <th>email</th>
+        <th>district</th>
+        <th>phone</th>
     </tr>
     <?php 
     //
@@ -36,9 +37,10 @@ if ($result && $result->num_rows > 0) {
             ?>
             <tr>
                 <td><?php echo $row1->id ?></td>
-                <td><?php echo $row1->gender?></td>
-                <td><?php echo $row1->country ?></td>
-                <td><?php echo $row1->distric ?></td>
+                <td><?php echo $row1->name?></td>
+                <td><?php echo $row1->email ?></td>
+                <td><?php echo $row1->district ?></td>
+                <td><?php echo $row1->phone ?></td>
             </tr>
             <?php
         }
